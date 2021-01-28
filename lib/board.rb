@@ -52,6 +52,10 @@ class Board
 			return true
 		end
 
+		if @arr_cases[0].cases_value == @arr_cases[1].cases_value && @arr_cases[0].cases_value == @arr_cases[2].cases_value && @arr_cases[0].cases_value != " "
+			return true
+		end
+
 		if @arr_cases[6].cases_value == @arr_cases[7].cases_value && @arr_cases[6].cases_value == @arr_cases[8].cases_value && @arr_cases[6].cases_value != " "
 			return true
 		end
@@ -71,6 +75,7 @@ class Board
 		if @arr_cases[0].cases_value == @arr_cases[4].cases_value && @arr_cases[0].cases_value == @arr_cases[8].cases_value && @arr_cases[0].cases_value != " "
 			return true
 		end
+
 
 		if @arr_cases[2].cases_value == @arr_cases[4].cases_value && @arr_cases[2].cases_value == @arr_cases[6].cases_value && @arr_cases[2].cases_value != " "
 			return true
