@@ -10,7 +10,7 @@ I'm now aiming at selling wordpress websites to people who know nothing about it
 
 Some actually do live, and get paid, to do so. I don't see why i couldn't straight up scam boomers myself.
 
-Anyway, if this shit works, I hope you'll enjoy the 5 seconds you enjoy playing it.
+Anyway, if this shit works, I hope you'll enjoy the 5 seconds you spend playing with it, before turning back to playing with yourself.
 Do keep in your narrow little mind that it took me (& of course my very much more talented friends) litteral HOURS to get there.
 
 Best regards,
