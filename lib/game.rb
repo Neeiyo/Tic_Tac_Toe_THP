@@ -7,20 +7,41 @@ class Game
   attr_accessor :current_player, :status, :Board , :arr_players, :count_turn
 	def initialize
 	  #TO DO : créé 2 joueurs, créé un board, met le status à "on going", défini un current_player
-	  puts "Bonjour joueur 1, quel est ton nom ?"
+		system 'clear'
+		puts "!            /// BIENVENUE DANS NOTRE FABULEUX TI-TAC-TOE \\\\\\           !"
+		puts "              -((•u•))~ c'est à toi dans un instant ~((•u•))-"
+		puts "                                  ....."
+		puts "                                   ..."
+		puts "                                    ."
+		puts ""
+		puts "                    Mon cher 1er concurrent, quel est ton nom ?"
 	  puts ""
-	  print ">"
+	  print "> "
 		  player1 = Player.new(gets.chomp.to_s, "X")
-		  puts ""
-		  puts "Bonjour joueur 2, quel est ton nom ?"
+			puts "                     Merveilleux, tu joueras donc les X"
+			puts ""
+		  puts "                    Et toi mon petit, quel est ton nom ?"
 	  puts ""
-	  print ">"
+	  print "> "
 		player2 = Player.new(gets.chomp.to_s, "O")
+		puts "                         Enchanté, tu joueras donc les O"
+			puts ""
 		@arr_players = [player1, player2]
 		@status = "on going"
 		@current_player = player1
 		@Board = Board.new
 		@count_turn = 0
+		puts "              Et rien que pour vos yeux ébahits, voici la tant attendue..."
+		puts ""
+		puts "                              GRILLE DE JEU !!!"
+		puts ""
+		puts "Chaque joueur devra inscrire le No de la case dans laquelle il veut inscrire son symbole :"
+		puts ""
+		puts "                                  1 | 2 | 3 "
+	  puts "                                 ---|---|---"
+	  puts "                                  4 | 5 | 6 "
+	  puts "                                 ---|---|---"
+	  puts "                                  7 | 8 | 9 "
 	end
 
 
