@@ -47,21 +47,21 @@ class Board
 	end
   
 	def victory?(current_player)
-		if @arr_cases[0].cases_value == @arr_cases[1].cases_value == @arr_cases[2].cases_value == @current_player.player_value
+		if @arr_cases[0].cases_value && @arr_cases[1].cases_value && @arr_cases[2].cases_value == @current_player.player_value
 			return true
-		else if @arr_cases[3].cases_value == @arr_cases[4].cases_value == @arr_cases[5].cases_value == @current_player.player_value
+		elseif @arr_cases[3].cases_value && @arr_cases[4].cases_value && @arr_cases[5].cases_value == @current_player.player_value
 			return true
-		else if @arr_cases[6].cases_value == @arr_cases[7].cases_value == @arr_cases[8].cases_value == @current_player.player_value
+		elseif @arr_cases[6].cases_value && @arr_cases[7].cases_value && @arr_cases[8].cases_value == @current_player.player_value
 			return true
-		else if @arr_cases[0].cases_value == @arr_cases[3].cases_value == @arr_cases[6].cases_value == @current_player.player_value
+		elseif @arr_cases[0].cases_value && @arr_cases[3].cases_value && @arr_cases[6].cases_value == @current_player.player_value
 			return true
-		else if @arr_cases[1].cases_value == @arr_cases[4].cases_value == @arr_cases[7].cases_value == @current_player.player_value
+		elseif @arr_cases[1].cases_value && @arr_cases[4].cases_value && @arr_cases[7].cases_value == @current_player.player_value
 			return true
-		else if @arr_cases[2].cases_value == @arr_cases[5].cases_value == @arr_cases[8].cases_value == @current_player.player_value
+		elseif @arr_cases[2].cases_value && @arr_cases[5].cases_value && @arr_cases[8].cases_value == @current_player.player_value
 			return true
-		else if @arr_cases[0].cases_value == @arr_cases[4].cases_value == @arr_cases[8].cases_value == @current_player.player_value
+		elseif @arr_cases[0].cases_value && @arr_cases[4].cases_value && @arr_cases[8].cases_value == @current_player.player_value
 			return true
-		else if @arr_cases[2].cases_value == @arr_cases[4].cases_value == @arr_cases[6].cases_value == @current_player.player_value
+		elseif @arr_cases[2].cases_value && @arr_cases[4].cases_value && @arr_cases[6].cases_value == @current_player.player_value
 			return true
 		else
 			return false
