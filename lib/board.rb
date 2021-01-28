@@ -28,6 +28,8 @@ class Board
 		#puts "Joueur 1 : donne nous ton nom :"
 		#print "> "
 		#@player1 = Player.new(gets.chomp.to_s, "X")
+		
+	
 		puts "#{current_player.player_name} à toi la main !"
 		puts ""
 		puts "Quelle case choisis-tu ? "
@@ -45,6 +47,7 @@ class Board
 	  #1) demande au bon joueur ce qu'il souhaite faire
 	  #2) change la BoardCase jouée en fonction de la valeur du joueur (X ou O)
 	end
+
   
 	def victory?(current_player)
 		if @arr_cases[0].cases_value && @arr_cases[1].cases_value && @arr_cases[2].cases_value == @current_player.player_value

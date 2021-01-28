@@ -9,6 +9,7 @@ class Show
 	  puts " #{board.arr_cases[3].cases_value} | #{board.arr_cases[4].cases_value} | #{board.arr_cases[5].cases_value} "
 	  puts "---|---|---"
 	  puts " #{board.arr_cases[6].cases_value} | #{board.arr_cases[7].cases_value} | #{board.arr_cases[8].cases_value} "
+	  
 
 	end
   
