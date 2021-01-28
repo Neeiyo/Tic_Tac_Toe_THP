@@ -1,6 +1,6 @@
 # Tic_Tac_Toe_THP
 
-THIS IS A README ABOUT THE PAINFULL EXPERIANCE WE JUST HAD REGARDING TIC TAC TOE
+THIS IS A README ABOUT THE PAINFULL EXPERIENCE WE JUST HAD REGARDING TIC TAC TOE
 
 you probably won't read any of it so i'm just gonna put a lot of text here, in english obviously.
 It's remarkably surprising to embrace the fact that a 2 minutes kids' game could become such a painfull hair-pulling experience when it comes to turning it into code.
