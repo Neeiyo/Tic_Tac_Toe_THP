@@ -16,8 +16,10 @@ class Application
     def perform
       # TO DO : méthode qui initialise le jeu puis contient des boucles while pour faire tourner le jeu tant que la partie n'est pas terminée.
       g = Game.new
-      g.turn
-  
+      while g.Board.victory? == false && g.count_turn != 9
+        g.turn
+      end
+      g.game_end
     end
   
   end

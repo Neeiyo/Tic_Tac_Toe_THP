@@ -27,9 +27,7 @@ class Board
 		#TO DO : une méthode qui :
 		#puts "Joueur 1 : donne nous ton nom :"
 		#print "> "
-		#@player1 = Player.new(gets.chomp.to_s, "X")
-		
-	
+		#@player1 = Player.new(gets.chomp
 		puts "#{current_player.player_name} à toi la main !"
 		puts ""
 		puts "Quelle case choisis-tu ? "
@@ -47,28 +45,38 @@ class Board
 	  #1) demande au bon joueur ce qu'il souhaite faire
 	  #2) change la BoardCase jouée en fonction de la valeur du joueur (X ou O)
 	end
-
   
-	def victory?(current_player)
-		if @arr_cases[0].cases_value && @arr_cases[1].cases_value && @arr_cases[2].cases_value == @current_player.player_value
+	def victory?
+
+		if @arr_cases[3].cases_value == @arr_cases[4].cases_value && @arr_cases[3].cases_value == @arr_cases[5].cases_value && @arr_cases[3].cases_value != " "
 			return true
-		elseif @arr_cases[3].cases_value && @arr_cases[4].cases_value && @arr_cases[5].cases_value == @current_player.player_value
-			return true
-		elseif @arr_cases[6].cases_value && @arr_cases[7].cases_value && @arr_cases[8].cases_value == @current_player.player_value
-			return true
-		elseif @arr_cases[0].cases_value && @arr_cases[3].cases_value && @arr_cases[6].cases_value == @current_player.player_value
-			return true
-		elseif @arr_cases[1].cases_value && @arr_cases[4].cases_value && @arr_cases[7].cases_value == @current_player.player_value
-			return true
-		elseif @arr_cases[2].cases_value && @arr_cases[5].cases_value && @arr_cases[8].cases_value == @current_player.player_value
-			return true
-		elseif @arr_cases[0].cases_value && @arr_cases[4].cases_value && @arr_cases[8].cases_value == @current_player.player_value
-			return true
-		elseif @arr_cases[2].cases_value && @arr_cases[4].cases_value && @arr_cases[6].cases_value == @current_player.player_value
-			return true
-		else
-			return false
 		end
+
+		if @arr_cases[6].cases_value == @arr_cases[7].cases_value && @arr_cases[6].cases_value == @arr_cases[8].cases_value && @arr_cases[6].cases_value != " "
+			return true
+		end
+
+		if @arr_cases[0].cases_value == @arr_cases[3].cases_value && @arr_cases[0].cases_value == @arr_cases[6].cases_value && @arr_cases[0].cases_value != " "
+			return true
+		end
+
+		if @arr_cases[1].cases_value == @arr_cases[4].cases_value && @arr_cases[1].cases_value == @arr_cases[7].cases_value && @arr_cases[1].cases_value != " "
+			return true
+		end
+
+		if @arr_cases[2].cases_value == @arr_cases[5].cases_value && @arr_cases[2].cases_value == @arr_cases[8].cases_value && @arr_cases[2].cases_value != " "
+			return true
+		end
+
+		if @arr_cases[0].cases_value == @arr_cases[4].cases_value && @arr_cases[0].cases_value == @arr_cases[8].cases_value && @arr_cases[0].cases_value != " "
+			return true
+		end
+
+		if @arr_cases[2].cases_value == @arr_cases[4].cases_value && @arr_cases[2].cases_value == @arr_cases[6].cases_value && @arr_cases[2].cases_value != " "
+			return true
+		end
+			return false
+		
 	  #TO DO : une méthode qui vérifie le plateau et indique s'il y a un vainqueur ou match nul
 	end
 end
